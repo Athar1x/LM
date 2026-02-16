@@ -7,64 +7,195 @@
     
     <link rel="icon" href="https://i.postimg.cc/BbZMFbN2/Gemini-Generated-Image-sike87sike87sike.png" type="image/png">
     
-    <meta name="description" content="متجر أثر للمنتجات الإسلامية، فوانيس رمضان، سجاد صلاة، سبح إلكترونية، ومصاحف بأفضل الأسعار.">
-    <meta name="keywords" content="فانوس رمضان, سجاد صلاة, سبحة, مصحف, هدايا إسلامية, أثر ستور, Athar Store">
-
     <meta property="og:title" content="Athar Store | أثر">
-    <meta property="og:description" content="متجر أثر للمنتجات الإسلامية والهدايا الرمضانية.">
+    <meta property="og:description" content="متجر أثر للمنتجات الإسلامية والهدايا الرمضانية المميزة.">
     <meta property="og:image" content="https://i.postimg.cc/BbZMFbN2/Gemini-Generated-Image-sike87sike87sike.png">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://story-97cf7.firebaseapp.com/">
     <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div id="main-bg"></div>
+    <div class="particles-bg" id="particles-bg"></div>
+    
+    <div class="floating-ornaments">
+        <div class="ornament ornament-1">✦</div>
+        <div class="ornament ornament-2">✧</div>
+        <div class="ornament ornament-3">❋</div>
+        <div class="ornament ornament-4">✵</div>
+        <div class="ornament ornament-5">✦</div>
+    </div>
 
-    <header class="glass-header" id="main-header">
-        <div class="container header-content">
+    <div class="top-basmala">
+        <span class="basmala-glow">بسم الله الرحمن الرحيم</span>
+    </div>
+
+    <header class="neo-header" id="main-header">
+        <div class="header-content">
             <div class="brand" onclick="router('home')">
-                <div class="logo-text">Athar</div>
-                <i class="fas fa-kaaba logo-icon"></i>
+                <div class="brand-text">
+                    <div class="logo-text-gradient">Athar</div>
+                    <div class="brand-tagline">متجر الأثر</div>
+                </div>
             </div>
             
             <div class="nav-icons">
-                <div class="icon-btn hidden" id="admin-add-btn" onclick="router('admin-add')">
+                <div class="icon-btn-neo hidden" id="admin-add-btn" onclick="router('admin-add')">
                     <i class="fas fa-plus"></i>
+                    <div class="icon-ripple"></div>
                 </div>
 
-                <div class="icon-btn" onclick="router('cart')">
+                <div class="icon-btn-neo" onclick="router('cart')">
                     <i class="fas fa-shopping-bag"></i>
-                    <span id="cart-badge" class="badge">0</span>
+                    <span id="cart-badge" class="badge-neo">0</span>
+                    <div class="icon-ripple"></div>
                 </div>
 
-                <div class="icon-btn" onclick="checkAdminAccess()">
+                <div class="icon-btn-neo" onclick="checkAdminAccess()">
                     <i class="fas fa-user-lock"></i>
+                    <div class="icon-ripple"></div>
                 </div>
             </div>
         </div>
     </header>
 
+    <section class="ramadan-hero" id="ramadan-hero">
+        <div class="stars-container">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
+        <div class="lanterns-3d">
+            <div class="lantern-3d">🏮</div>
+            <div class="lantern-3d">🏮</div>
+            <div class="lantern-3d">🏮</div>
+            <div class="lantern-3d">🏮</div>
+        </div>
+
+        <div class="moon-3d">
+            <div class="crescent"></div>
+            <div class="moon-stars">
+                <span class="moon-star" style="top: -10px; right: 20px;">⭐</span>
+                <span class="moon-star" style="top: 30px; right: -15px;">✨</span>
+                <span class="moon-star" style="bottom: 20px; left: -10px;">⭐</span>
+            </div>
+        </div>
+
+        <div class="ramadan-text">
+            <h1 class="ramadan-title">رمضان كريم</h1>
+            <p class="ramadan-subtitle">كل عام وأنتم بخير</p>
+        </div>
+
+        <div class="islamic-pattern">
+            <div class="pattern-ornament">✦</div>
+            <div class="pattern-ornament">❋</div>
+            <div class="pattern-ornament">✵</div>
+            <div class="pattern-ornament">❋</div>
+            <div class="pattern-ornament">✦</div>
+        </div>
+    </section>
+
     <main id="app" class="main-content"></main>
 
-    <div id="toast" class="toast hidden">
-        <span id="toast-msg">تمت العملية بنجاح</span>
+    <div class="islamic-divider-premium hidden" id="footer-divider">
+        <div class="divider-pattern"></div>
     </div>
 
-    <div id="color-modal" class="modal hidden">
-        <div class="modal-content">
-            <h3>تغيير اللون</h3>
-            <div id="modal-colors-area" class="colors-grid"></div>
+    <footer id="main-footer" class="footer-premium hidden">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="https://i.postimg.cc/BbZMFbN2/Gemini-Generated-Image-sike87sike87sike.png" class="footer-logo">
+                <h3>Athar Store</h3>
+                <p>متجرك الموثوق للمنتجات الإسلامية</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <a href="#"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a>
+                <a href="#"><i class="fas fa-envelope"></i> تواصل معنا</a>
+                <a href="#"><i class="fas fa-file-contract"></i> الشروط والأحكام</a>
+            </div>
+            
+            <div class="footer-social">
+                <h4>تابعنا</h4>
+                <div class="social-icons-grid" id="social-icons-container">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <i class="fas fa-copyright"></i> 2026 Athar Store. جميع الحقوق محفوظة.
+            </div>
+            <a href="https://wa.me/201202687082" target="_blank" class="developer-contact">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contact Developer</span>
+            </a>
+            <div class="made-with">
+                صنع بـ <i class="fas fa-heart heart-pulse"></i> في مصر
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast-premium hidden">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <span id="toast-msg">تمت العملية بنجاح</span>
+        <div class="toast-progress"></div>
+    </div>
+
+    <div id="color-modal" class="modal-premium hidden">
+        <div class="modal-overlay" onclick="closeColorModal()"></div>
+        <div class="modal-content-premium">
+            <button class="modal-close" onclick="closeColorModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3><i class="fas fa-palette"></i> اختر اللون المفضل</h3>
+            <div id="modal-colors-area" class="colors-grid-premium"></div>
             <div class="modal-actions">
-                <button class="btn-primary" onclick="confirmColorUpdate()">تأكيد</button>
-                <button class="btn-sec" onclick="closeColorModal()">إلغاء</button>
+                <button class="btn-primary-neo" onclick="confirmColorUpdate()">
+                    <span>تأكيد</span>
+                    <i class="fas fa-check"></i>
+                </button>
+                <button class="btn-secondary-neo" onclick="closeColorModal()">
+                    <span>إلغاء</span>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
         </div>
     </div>
 
     <script type="module" src="app.js"></script>
+    
+    <script>
+        function createParticles() {
+            const container = document.getElementById('particles-bg');
+            for(let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+    </script>
 </body>
 </html>
